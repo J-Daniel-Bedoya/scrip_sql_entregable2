@@ -47,7 +47,7 @@ insert into "tags" (name) values ('Filosofía'),('Mascotas'),('Belleza');
 
 insert into "comments" (comment) values ('¡Que bonito!'), ('¡Que buen pots!'), ('Me encanto'), ('Es super genial');
 
-insert into "rel_user_comment" (id_user, id_comment) values (2,1), (1,2), (1,3), (2,4),(1,5);
+insert into "rel_user_comment" (id_user, id_comment) values (2,1), (1,2), (1,3), (2,4);
 
 insert into "posts" (title, description, author, text, id_tgs, id_ref) values 
 ('datos curiosos', 'frases mas conocidas del mundo medieval','Sócrates', 'lorem', 1, 6), 
