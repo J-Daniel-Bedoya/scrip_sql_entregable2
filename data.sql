@@ -40,15 +40,20 @@ ALTER TABLE "rel_user_comment" ADD FOREIGN KEY ("id_user") REFERENCES "user" ("i
 
 ALTER TABLE "rel_user_comment" ADD FOREIGN KEY ("id_comment") REFERENCES "comments" ("id_comment");
 
-insert into "user" (name, email, password, age) values ('Diana', 'diana@gmail.com', 123, 19),
-('Daniel', 'daniel@gmail.com', 321, 18);
+insert into "user" (name, email, password, age) values 
+('Diana', 'diana@gmail.com', 1237, 19),
+('Daniel', 'daniel@gmail.com', 3213, 18),
+('Luiz', 'tluiz34@gmail.com', 4532, 24),
+('Sara', 'saraEspinoza1@gmail.com', 8464, 23);
 
-insert into "tags" (name) values ('Filosofía'),('Mascotas'),('Belleza');
+insert into "tags" (name) values ('Filosofía'),('Mascotas');
 
 insert into "comments" (comment) values ('¡Que bonito!'), ('¡Que buen pots!'), ('Me encanto'), ('Es super genial');
 
-insert into "rel_user_comment" (id_user, id_comment) values (2,1), (1,2), (1,3), (2,4);
+insert into "rel_user_comment" (id_user, id_comment) values (2,1), (1,2), (3,3), (2,4);
 
 insert into "posts" (title, description, author, text, id_tags, id_user_comment) values 
-('datos curiosos', 'frases mas conocidas del mundo medieval','Sócrates', 'lorem', 1, 2), 
-('peluditos', '7 tips para que tu mascota se comporte mejor','Estrellita777', 'lorem',2,1);
+('Datos curiosos', 'Frases mas conocidas del mundo medieval','Sócrates', 'lorem', 1, 2), 
+('Peluditos', '7 tips para que tu mascota se comporte mejor','Estrellita777', 'lorem',2,3),
+('Su dulsura', 'Las mejores medicinas para tu mascota','Farma25', 'lorem',2,1),
+('Pensando soluciones', 'Las mejores soluciones para el día a día','Emperatriz Song', 'lorem',1,4);
